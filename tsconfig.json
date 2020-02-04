@@ -16,7 +16,7 @@
     "resolveJsonModule": true,
     "rootDir": "src",
     "sourceMap": true,
-    "strict": true,
+    "strict": false,
     "target": "es2017",
     "types": []
   },
