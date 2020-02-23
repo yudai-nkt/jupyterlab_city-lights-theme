@@ -25,6 +25,50 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
+  /* City Lights color scheme
+   *
+   * color names are taken from the following Atom theme with `--cl-` prefix.
+   * https://github.com/Yummygum/city-lights-syntax-atom/blob/master/styles/colors.less
+   */
+
+  --cl-very-light-gray: #B7C5D3;
+  --cl-light-gray: #718CA1;
+  --cl-gray: #41505E;
+  --cl-dark-gray: #333F4A;
+  --cl-very-dark-gray: #1D252C;
+
+  --cl-color1light: #70E1E8;
+  --cl-color1medium: #33CED8;
+  --cl-color1dark: #008B94;
+
+  --cl-color2light: #5EC4FF;
+  --cl-color2medium: #68A1F0;
+  --cl-color2dark: #539AFC;
+
+  --cl-color3light:#E27E8D;
+  --cl-color3medium:#D95468;
+  --cl-color3dark:#B62D65;
+
+  --cl-color4light: #EBBF83;
+  --cl-color4dark: #D98E48;
+
+  --cl-color5light: #8BD49C;
+
+  --cl-color6dark: #718CA1;
+
+  --cl-color7light: #8BD49C;
+
+
+  --cl-cyan: var(--cl-color1light);
+  --cl-blue: var(--cl-color2light);
+  --cl-purple: var(--cl-color3dark);
+  --cl-pink: var(--cl-color3light);
+  --cl-yellow: var(--cl-color4light);
+  --cl-green: var(--cl-color5light);
+  --cl-red: var(--cl-color3medium);
+  --cl-orange: var(--cl-color4dark);
+  --cl-light-orange: var(--cl-color4light);
+
   /* Elevation
    *
    * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
@@ -118,10 +162,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-ui-font-color0: var(--cl-very-light-gray);
+  --jp-ui-font-color1: var(--cl-very-light-gray);
   --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color3: var(--cl-dark-gray);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -161,7 +205,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Defaults use Material Design specification */
   --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color1: var(--cl-very-light-gray);
   --jp-content-font-color2: rgba(0, 0, 0, 0.54);
   --jp-content-font-color3: rgba(0, 0, 0, 0.38);
 
@@ -197,10 +241,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
+  --jp-layout-color0: var(--cl-very-dark-gray);
+  --jp-layout-color1: #171D23;
+  --jp-layout-color2: var(--cl-very-dark-gray);
+  --jp-layout-color3: var(--cl-gray);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -211,8 +255,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-inverse-layout-color0: #111111;
   --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color2: var(--cl-very-light-gray);
+  --jp-inverse-layout-color3: var(--cl-very-light-gray);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
@@ -257,24 +301,24 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: var(--md-grey-100);
-  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-background: var(--cl-dark-gray);
+  --jp-cell-editor-border-color: var(--cl-light-grey);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
-  --jp-cell-editor-active-border-color: var(--jp-brand-color1);
+  --jp-cell-editor-active-border-color: var(--cl-blue);
 
   --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  --jp-cell-prompt-not-active-font-color: var(--cl-light-gray);
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
-  --jp-cell-inprompt-font-color: #307fc1;
+  --jp-cell-inprompt-font-color: var(--cl-color2medium);
   /* A custom blend of MD grey and orange 600
    * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
-  --jp-cell-outprompt-font-color: #bf5b3d;
+  --jp-cell-outprompt-font-color: var(--cl-orange);
 
   /* Notebook specific styles */
 
@@ -295,9 +339,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-error-background: #E27E8D;
+  --jp-rendermime-table-row-background: var(--cl-gray);
+  --jp-rendermime-table-row-hover-background: var(--cl-color1dark);
 
   /* Dialog specific styles */
 
@@ -327,28 +371,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
-  --jp-editor-selected-focused-background: #d7d4f0;
-  --jp-editor-cursor-color: var(--jp-ui-font-color0);
+  --jp-editor-selected-background: var(--cl-color6dark);
+  --jp-editor-selected-focused-background: var(--cl-blue);
+  --jp-editor-cursor-color: var(--cl-blue);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #008000;
+  --jp-mirror-editor-keyword-color: var(--cl-purple);
   --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
-  --jp-mirror-editor-variable-color: var(--md-grey-900);
+  --jp-mirror-editor-number-color: var(--cl-pink);
+  --jp-mirror-editor-def-color: var(--cl-cyan);
+  --jp-mirror-editor-variable-color: var(--jp-ui-font-color0);
   --jp-mirror-editor-variable-2-color: #05a;
   --jp-mirror-editor-variable-3-color: #085;
   --jp-mirror-editor-punctuation-color: #05a;
   --jp-mirror-editor-property-color: #05a;
-  --jp-mirror-editor-operator-color: #aa22ff;
-  --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ba2121;
+  --jp-mirror-editor-operator-color: var(--cl-cyan);
+  --jp-mirror-editor-comment-color: var(--cl-light-gray);
+  --jp-mirror-editor-string-color: #68A1F0;
   --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #aa22ff;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #008000;
+  --jp-mirror-editor-builtin-color: var(--cl-color6dark);
   --jp-mirror-editor-bracket-color: #997;
   --jp-mirror-editor-tag-color: #170;
   --jp-mirror-editor-attribute-color: #00c;
