@@ -1,6 +1,6 @@
-# @yudai-nkt/jupyterlab_city-lights-theme
+# JupyterLab City Lights Theme
 
-A port of the City Lights theme for JupyterLab
+A port of the [City Lights](http://citylights.xyz/) theme for JupyterLab
 
 ## Prerequisites
 
@@ -27,3 +27,11 @@ To rebuild the package and the JupyterLab app:
 npm run build
 jupyter lab build
 ```
+## License
+
+This repository is licensed under the MIT License. See [LICENSE.md](./LICENSE.md) for details.
+
+## Acknowledgement
+
+This JupyterLab theme was never made possible without the City Lights color palette originally designed by [Yummygum](https://yummygum.com/).
+I appreciate their great work.
