@@ -49,3 +49,5 @@ lerna-debug.log
 yarn-error.log
 
 junit.xml
+
+*.tsbuildinfo
