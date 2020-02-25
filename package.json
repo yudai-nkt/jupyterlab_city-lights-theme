@@ -9,7 +9,7 @@
     "jupyterlab-extension",
     "jupyterlab-theme"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "files": [
     "lib/*.d.ts",
     "lib/*.js.map",
