@@ -2,11 +2,11 @@
 
 A port of the [City Lights](http://citylights.xyz/) theme for JupyterLab
 
-## Prerequisites
-
-* JupyterLab
+![Preview](./preview.png)
 
 ## Installation
+
+Run the following command in your terminal.
 
 ```bash
 jupyter labextension install @yudai-nkt/jupyterlab_city-lights-theme
