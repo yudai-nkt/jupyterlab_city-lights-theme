@@ -164,7 +164,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Defaults use Material Design specification */
   --jp-ui-font-color0: var(--cl-very-light-gray);
   --jp-ui-font-color1: var(--cl-very-light-gray);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-ui-font-color2: var(--cl-gray);
   --jp-ui-font-color3: var(--cl-dark-gray);
 
   /*
