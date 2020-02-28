@@ -2,7 +2,7 @@
   color: var(--cl-light-gray)
 }
 .jp-FileEditor .CodeMirror{
-  background-color: var(--jp-cell-editor-background);
+  background-color: var(--jp-layout-color0);
   color: var(--cl-very-light-gray);
 }
 .jp-FileEditor .CodeMirror-selectedtext {
