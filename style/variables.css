@@ -378,18 +378,18 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Code mirror specific styles */
 
   --jp-mirror-editor-keyword-color: var(--cl-purple);
-  --jp-mirror-editor-atom-color: #88f;
+  --jp-mirror-editor-atom-color: var(--cl-pink);
   --jp-mirror-editor-number-color: var(--cl-pink);
   --jp-mirror-editor-def-color: var(--cl-cyan);
   --jp-mirror-editor-variable-color: var(--jp-ui-font-color0);
   --jp-mirror-editor-variable-2-color: var(--cl-color2dark);
-  --jp-mirror-editor-variable-3-color: #085;
+  --jp-mirror-editor-variable-3-color: var(--cl-color1dark);
   --jp-mirror-editor-punctuation-color: #05a;
   --jp-mirror-editor-property-color: var(--cl-color1dark);
   --jp-mirror-editor-operator-color: var(--cl-color2dark);
   --jp-mirror-editor-comment-color: var(--cl-light-gray);
   --jp-mirror-editor-string-color: var(--cl-yellow);
-  --jp-mirror-editor-string-2-color: #708;
+  --jp-mirror-editor-string-2-color: var(--cl-color4dark);
   --jp-mirror-editor-meta-color: var(--cl-cyan);
   --jp-mirror-editor-qualifier-color: #555;
   --jp-mirror-editor-builtin-color: var(--cl-color6dark);
@@ -398,7 +398,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-attribute-color: #00c;
   --jp-mirror-editor-header-color: var(--cl-color2dark);
   --jp-mirror-editor-quote-color: var(--cl-color6dark);
-  --jp-mirror-editor-link-color: var(--cl-color2medium);
+  --jp-mirror-editor-link-color: var(--cl-blue);
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
