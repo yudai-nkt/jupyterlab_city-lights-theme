@@ -1,0 +1,9 @@
+.jp-RenderedText pre .ansi-red-fg {
+  color: var(--cl-red);
+}
+.jp-RenderedText pre .ansi-blue-fg {
+  color: var(--cl-color2medium);
+}
+.jp-RenderedText pre .ansi-green-fg {
+  color: var(--cl-green);
+}
