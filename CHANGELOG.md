@@ -11,6 +11,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/), 
 ### Changed
 - Overwrite color definitions in `readmime` package ([#2]).
 
+### Fixed
+- Poor visibility of tab close button ([#4]).
+
 ## [0.2.0] - 2020-02-26
 ### Fixed
 - Poor visibility of completion type ([#1]).
@@ -25,3 +28,4 @@ Initial release.
 [#1]: https://github.com/yudai-nkt/jupyterlab_city-lights-theme/pull/1
 [#2]: https://github.com/yudai-nkt/jupyterlab_city-lights-theme/pull/2
 [#3]: https://github.com/yudai-nkt/jupyterlab_city-lights-theme/pull/3
+[#4]: https://github.com/yudai-nkt/jupyterlab_city-lights-theme/pull/4
