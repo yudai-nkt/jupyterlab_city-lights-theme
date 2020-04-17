@@ -243,7 +243,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-layout-color0: var(--cl-very-dark-gray);
   --jp-layout-color1: #171D23;
-  --jp-layout-color2: var(--cl-very-dark-gray);
+  --jp-layout-color2: var(--cl-dark-gray);
   --jp-layout-color3: var(--cl-gray);
   --jp-layout-color4: var(--md-grey-600);
 
