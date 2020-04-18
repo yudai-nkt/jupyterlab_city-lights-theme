@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.1...v0.3.2) (2020-04-18)
+
+
+### Bug Fixes
+
+* **deps:** fix some vulnerabilities ([1f55f5b](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/1f55f5b60b25765337576966a209ffebecbd28f7))
+
 ### [0.3.1](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.0...v0.3.1) (2020-04-18)
 
 
