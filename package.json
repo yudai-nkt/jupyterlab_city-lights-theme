@@ -1,6 +1,6 @@
 {
   "name": "@yudai-nkt/jupyterlab_city-lights-theme",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A port of the City Lights theme for JupyterLab",
   "author": "Yudai Nakata <yudai.nkt@gmail.com>",
   "keywords": [
