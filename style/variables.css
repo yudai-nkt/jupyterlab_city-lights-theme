@@ -134,7 +134,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-border-color0: var(--cl-gray);
   --jp-border-color1: var(--cl-gray);
   --jp-border-color2: var(--cl-gray);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color3: var(--cl-gray);
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -209,7 +209,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color2: rgba(0, 0, 0, 0.54);
   --jp-content-font-color3: rgba(0, 0, 0, 0.38);
 
-  --jp-content-link-color: var(--md-blue-700);
+  --jp-content-link-color: var(--cl-blue);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -245,7 +245,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color1: #171D23;
   --jp-layout-color2: var(--cl-dark-gray);
   --jp-layout-color3: var(--cl-gray);
-  --jp-layout-color4: var(--md-grey-600);
+  --jp-layout-color4: var(--cl-very-light-gray);
 
   /* Inverse Layout
    *
@@ -254,18 +254,21 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-inverse-layout-color0: #111111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color1: var(--cl-very-light-gray);
   --jp-inverse-layout-color2: var(--cl-very-light-gray);
   --jp-inverse-layout-color3: var(--cl-very-light-gray);
-  --jp-inverse-layout-color4: var(--md-grey-600);
+  --jp-inverse-layout-color4: var(--cl-gray);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-700);
+  --jp-brand-color0: var(--cl-color2dark);
   --jp-brand-color1: var(--cl-color2dark);
-  --jp-brand-color2: var(--md-blue-300);
-  --jp-brand-color3: var(--md-blue-100);
+  --jp-brand-color2: var(--cl-color2medium);
+  --jp-brand-color3: var(--cl-color2medium);
 
+  /* As JupyterLab core packages don't seem to use these colors,
+   * this part remains as is.
+   */
   --jp-accent-color0: var(--md-green-700);
   --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
@@ -273,25 +276,25 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-700);
-  --jp-warn-color1: var(--md-orange-500);
-  --jp-warn-color2: var(--md-orange-300);
-  --jp-warn-color3: var(--md-orange-100);
+  --jp-warn-color0: var(--cl-orange);
+  --jp-warn-color1: var(--cl-orange);
+  --jp-warn-color2: var(--cl-yellow);
+  --jp-warn-color3: var(--cl-yellow);
 
-  --jp-error-color0: var(--md-red-700);
-  --jp-error-color1: var(--md-red-500);
-  --jp-error-color2: var(--md-red-300);
-  --jp-error-color3: var(--md-red-100);
+  --jp-error-color0: var(--cl-purple);
+  --jp-error-color1: var(--cl-purple);
+  --jp-error-color2: var(--cl-red);
+  --jp-error-color3: var(--cl-red);
 
-  --jp-success-color0: var(--md-green-700);
-  --jp-success-color1: var(--md-green-500);
-  --jp-success-color2: var(--md-green-300);
-  --jp-success-color3: var(--md-green-100);
+  --jp-success-color0: var(--cl-green);
+  --jp-success-color1: var(--cl-green);
+  --jp-success-color2: var(--cl-green);
+  --jp-success-color3: var(--cl-green);
 
-  --jp-info-color0: var(--md-cyan-700);
-  --jp-info-color1: var(--md-cyan-500);
-  --jp-info-color2: var(--md-cyan-300);
-  --jp-info-color3: var(--md-cyan-100);
+  --jp-info-color0: var(--cl-color1medium);
+  --jp-info-color1: var(--cl-color1medium);
+  --jp-info-color2: var(--cl-color1light);
+  --jp-info-color3: var(--cl-color1light);
 
   /* Cell specific styles */
 
@@ -303,7 +306,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-cell-editor-background: var(--cl-dark-gray);
   --jp-cell-editor-border-color: var(--cl-light-grey);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--cl-color2medium);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--cl-blue);
 
@@ -324,7 +327,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--md-blue-50);
+  --jp-notebook-multiselected-color: var(--cl-color2medium);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -358,11 +361,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-background: var(--jp-layout-color1);
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
-  --jp-toolbar-active-background: var(--md-grey-300);
+  --jp-toolbar-active-background: var(--jp-layout-color0);
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-box-shadow: inset 0 0 2px var(--cl-color2medium);
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
   --jp-input-background: var(--jp-layout-color2);
