@@ -1,0 +1,23 @@
+button.jp-mod-styled.jp-mod-accept {
+  background: var(--cl-color2light);
+}
+
+button.jp-mod-styled.jp-mod-accept:hover {
+  background: var(--cl-color2medium);
+}
+
+button.jp-mod-styled.jp-mod-accept:active {
+  background: var(--cl-color2dark);
+}
+
+button.jp-mod-styled.jp-mod-reject {
+  background: var(--cl-very-light-gray);
+}
+
+button.jp-mod-styled.jp-mod-reject:hover {
+  background: var(--cl-light-gray);
+}
+
+button.jp-mod-styled.jp-mod-reject:active {
+  background: var(--cl-gray);
+}
