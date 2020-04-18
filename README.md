@@ -17,7 +17,7 @@ jupyter labextension install @yudai-nkt/jupyterlab_city-lights-theme
 For a development install (requires npm version 4 or later), do the following in the repository directory:
 
 ```bash
-npm install
+npm ci
 jupyter labextension link .
 ```
 
