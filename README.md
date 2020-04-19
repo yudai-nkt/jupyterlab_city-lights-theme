@@ -1,4 +1,6 @@
 # JupyterLab City Lights Theme
+[![npm](https://img.shields.io/npm/v/@yudai-nkt/jupyterlab_city-lights-theme)](https://www.npmjs.com/package/@yudai-nkt/jupyterlab_city-lights-theme)
+[![build](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/workflows/build/badge.svg?branch=master)](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/actions?query=workflow%3Abuild+branch%3Amaster)
 
 A port of the [City Lights](http://citylights.xyz/) theme for JupyterLab
 
