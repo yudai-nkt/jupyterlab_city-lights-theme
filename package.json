@@ -41,7 +41,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "css-loader": "^3.5.2",
     "husky": "^4.2.5",
-    "mini-css-extract-plugin": "~0.4.4",
+    "mini-css-extract-plugin": "~0.9.0",
     "rimraf": "~3.0.2",
     "standard-version": "^7.1.0",
     "svg-url-loader": "~2.3.1",
