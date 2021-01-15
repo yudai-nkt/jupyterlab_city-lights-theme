@@ -33,7 +33,7 @@
     "watch:webpack": "webpack --watch"
   },
   "dependencies": {
-    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/application": "^3.0.3",
     "@jupyterlab/apputils": "^1.0.0"
   },
   "devDependencies": {
