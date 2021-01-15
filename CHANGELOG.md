@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.2...v0.3.3) (2021-01-15)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump elliptic from 6.5.2 to 6.5.3 ([#41](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/issues/41)) ([47b99aa](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/47b99aab87a420a1dc7595680305d8798732d340))
+* **deps:** [security] bump ini from 1.3.5 to 1.3.8 ([#78](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/issues/78)) ([6d303a9](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/6d303a9dd90e208b765fdefa6309186a83dfc060))
+* **deps:** [security] bump node-fetch from 2.6.0 to 2.6.1 ([#57](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/issues/57)) ([da6d7eb](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/da6d7eb96df98ecfbb39d436c27fb2dfa2570b00))
+
 ### [0.3.2](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.1...v0.3.2) (2020-04-18)
 
 
