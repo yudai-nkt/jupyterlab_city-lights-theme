@@ -28,7 +28,7 @@
     "bump:dryrun": "standard-version --dry-run",
     "clean": "rimraf lib && rimraf static && rimraf tsconfig.tsbuildinfo",
     "postpublish": "git push --follow-tags origin master",
-    "prepare": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
     "watch": "tsc -w",
     "watch:webpack": "webpack --watch"
   },
