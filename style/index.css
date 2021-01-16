@@ -6,7 +6,6 @@
 @import './variables.css';
 @import './urls.css';
 @import './packages/@jupyterlab/application/custom.css';
-@import './packages/@jupyterlab/fileeditor/custom.css';
 @import './packages/@jupyterlab/rendermime/custom.css';
 
 /* Set the default typography for monospace elements */
