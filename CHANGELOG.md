@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.4...v1.0.0) (2021-01-16)
+
+
+### Bug Fixes
+
+* rename remaining colors to City Lights preset ([a36a8fc](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/a36a8fc41763ebc68798935ad8d537802c90e6c4))
+
 ### [0.3.4](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.2...v0.3.4) (2021-01-15)
 
 
