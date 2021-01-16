@@ -4,7 +4,6 @@
 |----------------------------------------------------------------------------*/
 
 @import './variables.css';
-@import './urls.css';
 @import './packages/@jupyterlab/application/custom.css';
 @import './packages/@jupyterlab/rendermime/custom.css';
 
