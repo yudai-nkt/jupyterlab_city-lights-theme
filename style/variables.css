@@ -387,23 +387,23 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-variable-color: var(--jp-ui-font-color0);
   --jp-mirror-editor-variable-2-color: var(--cl-color2dark);
   --jp-mirror-editor-variable-3-color: var(--cl-color1dark);
-  --jp-mirror-editor-punctuation-color: #05a;
+  --jp-mirror-editor-punctuation-color: var(--cl-color2dark);
   --jp-mirror-editor-property-color: var(--cl-color1dark);
   --jp-mirror-editor-operator-color: var(--cl-color2dark);
   --jp-mirror-editor-comment-color: var(--cl-light-gray);
   --jp-mirror-editor-string-color: var(--cl-yellow);
   --jp-mirror-editor-string-2-color: var(--cl-color4dark);
   --jp-mirror-editor-meta-color: var(--cl-cyan);
-  --jp-mirror-editor-qualifier-color: #555;
+  --jp-mirror-editor-qualifier-color: var(--cl-light-gray);
   --jp-mirror-editor-builtin-color: var(--cl-color6dark);
-  --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #170;
-  --jp-mirror-editor-attribute-color: #00c;
+  --jp-mirror-editor-bracket-color: var(--cl-color4light);
+  --jp-mirror-editor-tag-color: var(--cl-color7light);
+  --jp-mirror-editor-attribute-color: var(--cl-color2dark);
   --jp-mirror-editor-header-color: var(--cl-color2dark);
   --jp-mirror-editor-quote-color: var(--cl-color6dark);
   --jp-mirror-editor-link-color: var(--cl-blue);
-  --jp-mirror-editor-error-color: #f00;
-  --jp-mirror-editor-hr-color: #999;
+  --jp-mirror-editor-error-color: var(--cl-color3dark);
+  --jp-mirror-editor-hr-color: var(--cl-very-light-gray);
 
   /* Vega extension styles */
 
