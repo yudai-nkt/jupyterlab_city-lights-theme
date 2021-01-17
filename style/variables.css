@@ -172,7 +172,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color0: var(--cl-very-dark-gray);
   --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
   --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
   --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
@@ -253,7 +253,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111111;
+  --jp-inverse-layout-color0: var(--cl-very-light-gray);
   --jp-inverse-layout-color1: var(--cl-very-light-gray);
   --jp-inverse-layout-color2: var(--cl-very-light-gray);
   --jp-inverse-layout-color3: var(--cl-very-light-gray);
@@ -371,6 +371,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-background: var(--jp-layout-color2);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-box-shadow-color: var(--cl-color2medium);
 
   /* General editor styles */
 
@@ -413,6 +414,30 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-sidebar-min-width: 180px;
 
+  /* Search-related styles */
+
+  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-hover-opacity: 0.8;
+  --jp-search-toggle-on-opacity: 1;
+  --jp-search-selected-match-background-color: var(--cl-orange);
+  --jp-search-selected-match-color: var(--cl-very-dark-gray);
+  --jp-search-unselected-match-background-color: var(
+    --jp-inverse-layout-color0
+  );
+  --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+  --jp-scrollbar-background-color: var(--cl-gray);
+  --jp-scrollbar-thumb-color: 113, 140, 161; /* need to specify thumb color as an RGB triplet */
+
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
+
+  /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--cl-yellow);
   --jp-icon-contrast-color1: var(--cl-green);
   --jp-icon-contrast-color2: var(--cl-red);
