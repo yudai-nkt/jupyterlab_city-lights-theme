@@ -426,6 +426,18 @@ all of MD as it is not optimized for dense, information rich UIs.
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
 
+  /* scrollbar related styles. Supports every browser except Edge. */
+  --jp-scrollbar-background-color: var(--cl-gray);
+  --jp-scrollbar-thumb-color: 113, 140, 161; /* need to specify thumb color as an RGB triplet */
+
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
+
+  /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--cl-yellow);
   --jp-icon-contrast-color1: var(--cl-green);
   --jp-icon-contrast-color2: var(--cl-red);
