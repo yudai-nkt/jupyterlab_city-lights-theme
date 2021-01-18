@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v2.0.0...v3.0.0) (2021-01-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for JupyterLab 2.x
+
+### Features
+
+* update JupyterLab deps to ^3 ([f0d1f1c](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/f0d1f1c0bc368157ea9407dff9f4b51b1d6a47e7))
+
+
+### Bug Fixes
+
+* set appropriate colors to scrollbar component ([65a02f5](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/65a02f5e5ff6d155a772ee6f9ea31c2e54264f74))
+
 ## [2.0.0](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v1.0.0...v2.0.0) (2021-01-18)
 
 
