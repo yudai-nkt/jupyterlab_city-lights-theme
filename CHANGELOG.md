@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v1.0.0...v2.0.0) (2021-01-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for JupyterLab 1.x
+
+### Features
+
+* add (non-working) support for scrollbar ([36cba9c](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/36cba9c7aebf445db092f6b6270b7bc205333972)), closes [jupyterlab/jupyterlab#6026](https://github.com/jupyterlab/jupyterlab/issues/6026)
+* update JupterLab deps to ^2 ([103660e](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/103660e16b8b9b41aec4743b2770fc9309e03b9c))
+
+
+### Bug Fixes
+
+* remove custom support for file editor UI ([e6fb706](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/e6fb706eb27513fd705fc18ae0253477242b13d3))
+* set missing CSS variables ([9a7af7d](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/9a7af7df4ebb92319f1dad1f77bd3a131751ffc8))
+* stop importing urls.css and images used in it ([1770091](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/commit/17700913ee5aae10a718991ae3e33fa191272caf))
+
 ## [1.0.0](https://github.com/yudai-nkt/jupyterlab_city-lights-theme/compare/v0.3.4...v1.0.0) (2021-01-16)
 
 
