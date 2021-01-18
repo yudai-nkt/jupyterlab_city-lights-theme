@@ -427,8 +427,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
 
   /* scrollbar related styles. Supports every browser except Edge. */
-  --jp-scrollbar-background-color: var(--cl-gray);
-  --jp-scrollbar-thumb-color: 113, 140, 161; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-background-color: var(--cl-dark-gray);
+  --jp-scrollbar-thumb-color: 65, 80, 94; /* need to specify thumb color as an RGB triplet */
 
   --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
 
