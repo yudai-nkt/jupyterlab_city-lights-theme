@@ -26,9 +26,9 @@
     "bump": "standard-version",
     "bump:dryrun": "standard-version --dry-run",
     "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
-    "postci": "python3 -m venv .venv && .venv/bin/pip install jupyterlab==3",
     "postpublish": "git push --follow-tags origin master",
     "prepublishOnly": "npm run clean && npm run build",
+    "setup": "python3 -m venv .venv && .venv/bin/pip install jupyterlab==3",
     "test": ".venv/bin/python -m jupyterlab.browser_check",
     "watch": "tsc -w"
   },
