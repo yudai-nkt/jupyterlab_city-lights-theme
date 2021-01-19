@@ -24,8 +24,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
     - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run build:webpack --if-present
+    - name: Test the theme
+      run: |
+        .venv/bin/jupyter labextension list 2>&1 | grep -ie "jupyterlab_city-lights-theme.*OK"
+        npm test
       env:
         CI: true

@@ -29,6 +29,7 @@
     "postci": "python3 -m venv .venv && .venv/bin/pip install jupyterlab==3",
     "postpublish": "git push --follow-tags origin master",
     "prepublishOnly": "npm run clean && npm run build",
+    "test": ".venv/bin/python -m jupyterlab.browser_check",
     "watch": "tsc -w"
   },
   "dependencies": {
