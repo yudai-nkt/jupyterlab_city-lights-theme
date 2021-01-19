@@ -31,7 +31,9 @@ jobs:
     - name: Set up dependencies
       run: |
         npm ci
-        npm run setup
+        npm run setup:python
+        npm run build
+        .venv/bin/jupyter labextension link .
     - name: Test the theme
       run: |
         .venv/bin/jupyter labextension list 2>&1 | grep -ie "jupyterlab_city-lights-theme.*OK"
