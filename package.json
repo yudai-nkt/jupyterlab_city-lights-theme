@@ -28,7 +28,9 @@
     "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
     "postpublish": "git push --follow-tags origin master",
     "prepublishOnly": "npm run clean && npm run build",
-    "setup": "python3 -m venv .venv && .venv/bin/pip install jupyterlab==3",
+    "setup": "npm run setup:python && npm run setup:theme",
+    "setup:python": "python3 -m venv .venv && .venv/bin/pip install jupyterlab==3",
+    "setup:theme": "npm run build && .venv/bin/jupyter labextension link .",
     "test": ".venv/bin/python -m jupyterlab.browser_check",
     "watch": "tsc -w"
   },
