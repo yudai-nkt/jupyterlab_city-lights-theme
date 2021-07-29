@@ -12,11 +12,12 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x, 14.x]
+        os: [macos-latest]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,8 +25,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run build:webpack --if-present
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Set up dependencies
+      run: |
+        npm ci
+        npm run setup:python
+        npm run build
+        .venv/bin/jupyter labextension link .
+    - name: Test the theme
+      run: |
+        .venv/bin/jupyter labextension list 2>&1 | grep -ie "jupyterlab_city-lights-theme.*OK"
+        npm test
       env:
         CI: true
